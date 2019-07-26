@@ -1,0 +1,70 @@
+{
+  "_from": "@erebos/swarm-node",
+  "_id": "@erebos/swarm-node@0.8.0",
+  "_inBundle": false,
+  "_integrity": "sha512-WQzEglS5RbzkJqVFn0b/dXlwN0XPHiWevoSlB/5UJxH1dydf+ZJN7NXvE5KZISuBZ9w+QWfLZLG33cQ3Lr3s3w==",
+  "_location": "/@erebos/swarm-node",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@erebos/swarm-node",
+    "name": "@erebos/swarm-node",
+    "escapedName": "@erebos%2fswarm-node",
+    "scope": "@erebos",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/",
+    "/@erebos/swarm"
+  ],
+  "_resolved": "https://registry.npmjs.org/@erebos/swarm-node/-/swarm-node-0.8.0.tgz",
+  "_shasum": "3e10ef2720e72946eb0d5020d6e6a0ab246721ec",
+  "_spec": "@erebos/swarm-node",
+  "_where": "C:\\dev\\ether-twin",
+  "author": {
+    "name": "Mainframe"
+  },
+  "bugs": {
+    "url": "https://github.com/MainframeHQ/erebos/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@babel/runtime": "^7.4.5",
+    "@erebos/api-bzz-base": "^0.8.0",
+    "@erebos/api-bzz-node": "^0.8.0",
+    "@erebos/api-pss": "^0.7.0",
+    "@erebos/client-base": "^0.7.0",
+    "@mainframe/rpc-node": "^0.3.0",
+    "@mainframe/rpc-stream": "^0.3.0"
+  },
+  "deprecated": false,
+  "description": "Swarm client for node",
+  "devDependencies": {
+    "flow-bin": "^0.98.1"
+  },
+  "files": [
+    "lib/*",
+    "types/*"
+  ],
+  "homepage": "https://github.com/MainframeHQ/erebos#readme",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "@erebos/swarm-node",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MainframeHQ/erebos.git"
+  },
+  "scripts": {
+    "build": "yarn clean && yarn build:js && yarn build:flow",
+    "build:flow": "flow-copy-source src lib",
+    "build:js": "BABEL_ENV=node babel src --out-dir lib",
+    "clean": "del lib",
+    "prepublishOnly": "yarn build"
+  },
+  "types": "types/index.d.ts",
+  "version": "0.8.0"
+}

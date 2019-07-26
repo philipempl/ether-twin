@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>EtherTwin</title>
+	
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container" style="width: 1000px;">
+      <div class="row">
+        <div class="col-lg-12">
+		</br>
+<h2 class="text-center">Contract: 0x45618616816671</h2>
+</br>
+  <hr/>
+          <h5 id="accountAddress" class="text-center">ACCOUNT: 0x4561651861684862616518</h5>
+          <hr/>
+<h4 id="deviceID" class="text-left">Device ID</h4>
+
+<h4 id="deviceName" class="text-left">Device Name</h4>
+<h4 id="deviceAML" class="text-left">Device AML</h4>
+ <hr/>
+</br>
+</br>
+</br>
+<div id="loader">
+            <p class="text-center">Loading...</p>
+          </div>
+ <div id="content" >
+<table class="table">
+ <thead>
+                <tr>
+                  <th class="text-center" font-size="15px" scope="col">Documents</th>
+				  <th></th>
+                  <th class="text-center" scope="col" >Sensor Feeds</th>
+				  <th></th>
+				  <th  class="text-center" scope="col">External Source</th>
+                </tr>
+              </thead>	
+	<tbody>
+		<tr>
+			
+			<td>
+				<table class="table">
+				<thead>
+                <tr>
+                  <th class="text-center" scope="col">Timestamp</th>
+                  <th class="text-center" scope="col">Description</th>
+				  <th class="text-center" scope="col">Owner</th>
+                </tr>
+              </thead>
+					<tbody id="documentResults"></tbody>
+			</table>
+			<td>
+			</td>
+			<td>
+			<table class="table">
+				<thead>
+                <tr>
+                  <th class="text-center" scope="col">Timestamp</th>
+                  <th class="text-center" scope="col">Feed</th>
+                </tr>
+              </thead>
+					<tbody id="feedResults"></tbody>
+			</table>
+			</td>
+			<td>
+			</td>
+			<td>
+			<table class="table">
+				<thead>
+                <tr>
+                  <th class="text-center" scope="col">Timestamp</th>
+                  <th class="text-center" scope="col">Feed</th>
+                </tr>
+              </thead>
+					<tbody id="feedResults"></tbody>
+			</table>
+			</td>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+</div>
+      </div>
+    </div>
+    </div>
+
+  
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
