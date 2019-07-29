@@ -1,7 +1,17 @@
 ### Node files
-/network/*
-/node-modules/*
-/build/*
-/.puppeth/*
-/bin/*
+network/**
+!network/*.json
+!network/*.toml
+!network/*.key
+!network/*.pwds
+!network/*.txt
+!network/parity/*.json
+!network/parity/*.toml
+!network/parity/*.key
+!network/parity/*.pwds
+!network/parity/*.txt
+node-modules/**
+build
+.puppeth
+bin
 
