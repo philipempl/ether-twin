@@ -5,12 +5,13 @@ network/**
 !network/*.key
 !network/*.pwds
 !network/*.txt
+!network/parity/**
 !network/parity/*.json
 !network/parity/*.toml
 !network/parity/*.key
 !network/parity/*.pwds
 !network/parity/*.txt
-node-modules/**
+node-modules/
 build
 .puppeth
 bin
